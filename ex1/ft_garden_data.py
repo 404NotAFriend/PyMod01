@@ -13,7 +13,7 @@ if __name__ == "__main__":
     oak = Plant("Oak", 100, 365)
     tulip = Plant("Tulip", 15, 20)
 
-    print('""" Garden Plant Registry """')
+    print('=== Garden Plant Registry ===')
     rose.display_info()
     oak.display_info()
     tulip.display_info()

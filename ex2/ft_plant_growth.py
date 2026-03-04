@@ -16,9 +16,9 @@ class Plant:
 
 if __name__ == "__main__":
     rose = Plant("Rose", 25, 30)
-    print('""" Day 1 """')
+    print('=== Day 1 ===')
     print(rose.get_info())
-    print('""" Day 7 """')
+    print('=== Day 7 ===')
     for _ in range(6):
         rose.grow()
         rose.age_one_day()
