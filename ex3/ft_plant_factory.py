@@ -1,28 +1,29 @@
-class Plant:
-    def __init__(self, name: str, height: int, age: int) -> None:
+#!/usr/bin/env python3
+
+class Plant():
+    def __init__(self, name: str, height: float, age: int) -> None:
         self.name = name
         self.height = height
         self.age = age
 
+    def show(self) -> None:
+        print(f"Created: {self.name.capitalize()}: "
+              f"{round(self.height, 1)}cm, {self.age} days old")
 
-def ft_plant_factory() -> None:
-    plant_orders = [
-        ("Rose", 25, 30),
-        ("Oak", 200, 365),
-        ("Cactus", 5, 90),
-        ("Sunflower", 80, 45),
-        ("Fern", 15, 120)
-    ]
+
+def ft_plant_factory():
+    plant1 = Plant("Rose", 25.0, 30)
+    plant2 = Plant("Oak", 200.0, 365)
+    plant3 = Plant("Cactus", 5.0, 90)
+    plant4 = Plant("sunflower", 80.0, 45)
+    plant5 = Plant("fern", 15.0, 120)
 
     print("=== Plant Factory Output ===")
-
-    for order in plant_orders:
-        name, height, age = order
-        plant = Plant(name, height, age)
-        print(f"Created: {plant.name} ({plant.height}cm, {plant.age} days)")
-
-    print()
-    print(f"Total plants created: {len(plant_orders)}")
+    plant1.show()
+    plant2.show()
+    plant3.show()
+    plant4.show()
+    plant5.show()
 
 
 if __name__ == "__main__":

@@ -1,11 +1,16 @@
-if __name__ == "__main__":
-    plant_name = "Rose"
-    plant_height = 25
-    plant_age = 30
+#!/usr/bin/env python3
+
+def ft_garden_intro(plant_name: str, height: int, age: int) -> None:
+    name = plant_name.capitalize()
 
     print("=== Welcome to My Garden ===")
-    print(f"Plant: {plant_name}")
-    print(f"Height: {plant_height}cm")
-    print(f"Age: {plant_age} days")
-    print()
+    print(f"Plant: {name}")
+    print(f"Height: {height}cm")
+    print(f"Age: {age} days")
+    print("")
     print("=== End of Program ===")
+
+
+if __name__ == "__main__":
+
+    ft_garden_intro("rose", 25, 30)
